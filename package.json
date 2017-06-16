@@ -1,13 +1,17 @@
 {
   "name": "obgs",
-  "version": "1.0.0-SLAPSHOT",
+  "version": "1.0.0",
   "description": "Online boardgame system",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuillaumeTurcotte/obgs"
   },
   "keywords": [
-    "boardgame",
+    "boardgames",
     "system",
     "engine",
     "RESTful"
@@ -15,11 +19,11 @@
   "author": "Guillaume Turcotte",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "mongodb": "^2.2.28"
   },
-  "repository":
-    { "type" : "git"
-    , "url" : "https://github.com/GuillaumeTurcotte/obgs"
-    }
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
